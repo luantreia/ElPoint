@@ -7,15 +7,77 @@
     <!--W3 CSS-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
+    <!--css-->
+    <link rel="stylesheet" href="main.css">
+
     <title>PointStudio</title>
 </head>
-<body>
+<body class="w3-display-container">
     <div class="w3-row">
+        <div class="w3-col s0 m0 l2 w3-panel panel"></div>
         <div class="w3-col l8 w3-row">
-            <div class="w3-col l4"></div>
+            <div class="w3-col l6 box menu w3-center">
+                <div class="w3-padding-64"><h1>Point Studio</h1></div>
+                <div class="w3-padding-64">
+                    <a href="#about" class="w3-button w3-block w3-hover-blue-grey w3-padding-16">Sobre Nosotros</a>
+                    <a href="#artistas" class="w3-button w3-block w3-hover-blue-grey w3-padding-16">Artistas</a>
+                    <a href="#resume"class="w3-button w3-block w3-hover-blue-grey w3-padding-16">Resumen</a>
+                    <a href="" class="w3-button w3-block w3-hover-blue-grey w3-padding-16">Precios</a>
+                    <a href="" class="w3-button w3-block w3-hover-blue-grey w3-padding-16">Contacto</a>
+                </div>
+            </div>
+            <div class="w3-col l6 box about w3-center" id="about">
+                <div class="w3-padding-64">
+                    <h2>Sobre Nosotros</h2>
+                    <div class="w3-card cabina">
+                    </div>
+                    <img src="cabina.jpg" alt="Estudio" class="w3-image w3-margin w3-circle" style="width: 100%; max-width: 250px; ">
+                    <div class="w3-padding-32 w3-margin">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, atque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, atque?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l6 box artistas" id="artistas">
+                <div class="w3-content w3-display-container">
+                    <div class="w3-display-topmiddle w3-padding-64"><h2>Artistas</h2></div>
+                    <img class="mySlides" src="./artistas/1.jpg" style="width: 100%; max-height: 700px;" class="w3-content">
+                    <img class="mySlides" src="./artistas/2.jpg" style="width: 100%; max-height: 700px;">
+                    <img class="mySlides" src="./artistas/3.jpg" style="width: 100%; max-height: 700px;">
+                    <img class="mySlides" src="./artistas/4.jpg" style="width: 100%; max-height: 700px;">
+                    
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="w3-col l6 box resume" id="resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet consequatur ipsa facilis iste accusantium non fuga quaerat ullam ducimus!</div>
+            <div class="w3-col l6 box price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet consequatur ipsa facilis iste accusantium non fuga quaerat ullam ducimus!</div>
+            <div class="w3-col l6 box contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet consequatur ipsa facilis iste accusantium non fuga quaerat ullam ducimus!</div>
+            <div class="w3-col footer w3-center">
+                <p>2020 © ElPointStudio</p>
+            </div>
         </div>
     </div>
 
+    <script>
+    var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
     <!--W3 CSS-->
     <link rel="stylesheet" href="w3.css">
 </body>
