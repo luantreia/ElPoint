@@ -1,0 +1,36 @@
+.box{
+    height: 700px;
+}
+.menu{
+    background-color: #420065;
+    color: #ffffff;
+}
+.about{
+    background-color: black;
+    color: #ffffff;
+}
+.artistas{
+    background-color: #dddddd;
+}
+.resume{
+    background-color: #fdd78d;
+}
+.price{
+    background-color: #808080;
+}
+.contact{
+    background-color: #000000;
+}
+.footer{
+    background-color: #420065;
+    color: #ffffff;
+}
+.panel{
+    height: 0px;
+}
+.cabina{
+    max-height: 120px;
+}
+.artistas h2{
+    color: #ffffff;
+}
