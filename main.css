@@ -10,13 +10,14 @@
     color: #ffffff;
 }
 .artistas{
-    background-color: #dddddd;
+    background-color: #000000;
+    color: #ffffff;
 }
-.resume{
+.temas{
     background-color: #fdd78d;
 }
-.price{
-    background-color: #808080;
+.servicios{
+    background-color:#cacaca;
 }
 .contact{
     background-color: #000000;
@@ -31,6 +32,17 @@
 .cabina{
     max-height: 120px;
 }
-.artistas h2{
-    color: #ffffff;
+.mySlides{
+    margin: auto;
+}
+.servicios img{
+    width: auto;
+    height: 145px;
+}
+.servicios h3{
+    padding: auto;
+    margin: auto;
+}
+.servicios .w3-card{
+    margin: 10px 0;
 }
