@@ -41,6 +41,7 @@
     padding: auto;
     margin: auto;
 }
-.servicios .w3-card{
-    margin: 10px 0;
+.servicios--card{
+    display: inline-flex;
+    margin: 5px auto ;
 }
