@@ -43,5 +43,5 @@
 }
 .servicios--card{
     display: inline-flex;
-    margin: 5px auto ;
+    width: auto;
 }
