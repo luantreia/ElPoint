@@ -43,5 +43,6 @@
 }
 .servicios--card{
     display: inline-flex;
-    width: auto;
+    margin: 5px 0;
+
 }
